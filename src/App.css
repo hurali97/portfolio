@@ -25,6 +25,7 @@ height: 70%;
 	display: flex;;
   justify-content: flex-end;
 }
+
 .back
 {
 	background-image: url('finger.png');

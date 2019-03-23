@@ -9,6 +9,7 @@
     "react-dom": "^16.8.5",
     "react-floating-button-menu": "^2.0.1",
     "react-scripts": "2.1.8",
+    "react-tilt": "^0.1.4",
     "react-tooltip": "^3.10.0",
     "tachyons": "^4.11.1"
   },

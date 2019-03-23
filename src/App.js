@@ -3,6 +3,7 @@ import Home from './Components/Home/Home';
 import Picture from './Components/Picture/Picture';
 import CardList from './Components/Cards/CardList';
 import Footer from './Components/Footer/Footer';
+import About from './Components/About/About';
 import {Fields} from './Components/Cards/Fields';
 import './App.css';
 import './animate.css';
@@ -13,7 +14,8 @@ import {
     ChildButton,
 } from 'react-floating-button-menu';
 
- 
+
+
 
 
 class App extends Component {
@@ -21,10 +23,24 @@ class App extends Component {
 super();
 this.state = {
   isOpen: false,
-
+icClicked:false,
+about:'',
 }
   }
 
+onButtonClick=(about)=>{
+
+if(about==='about')
+{
+  this.setState({icClicked:true})
+this.setState({about:'about'})
+}else
+{
+    this.setState({icClicked:false})
+    this.setState({about:'xyz'})
+}
+
+}
 
   render() {
     return (
@@ -41,7 +57,12 @@ this.state = {
 
     <MainButton
     className='grow hover-bg-light-pink:focus mh3 mt4-ns back'
-      onClick={() => this.setState({ isOpen: !this.state.isOpen })}
+      onClick={() => {
+        return (
+          this.setState({ isOpen: !this.state.isOpen }),
+this.onButtonClick('xyz')
+          );}
+      }
       size={56}
     />
  
@@ -49,7 +70,7 @@ this.state = {
       className='grow hover-bg-light-pink:focus mh3 mt4-ns about'
       backgroundColor="white"
       size={40}
-      onClick={()=>console.log('clicked')}
+      onClick={()=>{ this.onButtonClick('about')}}
     />
   
      {/* <ChildButton
@@ -63,6 +84,8 @@ this.state = {
       size={40}
     />
   */}
+  <About isClicked={this.state.isClicked} about={this.state.about}/>
+  
   </FloatingMenu>
 </div>
        <Picture />
