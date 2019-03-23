@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Kodchasan');
+@fontface {
+font-family: 'Kodchasan', sans-serif;
+src:url('https://fonts.googleapis.com/css?family=Kodchasan');
+}
+
+ul.a{
+  list-style-type: circle;
+}
+
+
+.Home{
+	
+	font-family: 'Kodchasan', sans-serif;
+	font-size:5rem;
+}
