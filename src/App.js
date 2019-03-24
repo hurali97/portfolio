@@ -13,7 +13,8 @@ import {
   MainButton,
     ChildButton,
 } from 'react-floating-button-menu';
-
+import Tilt from 'react-tilt';
+import skills from './skills.png'
 
 
 
@@ -56,7 +57,7 @@ this.setState({about:'about'})
   >
 
     <MainButton
-    className='grow hover-bg-light-pink:focus mh3 mt4-ns back'
+    className='grow hover-bg-light-pink:focus mh3 mt4-ns back animated fadeInLeftBig delay-5s'
       onClick={() => {
         return (
           this.setState({ isOpen: !this.state.isOpen }),
@@ -84,16 +85,24 @@ this.onButtonClick('xyz')
       size={40}
     />
   */}
+{/*
   <About isClicked={this.state.isClicked} about={this.state.about}/>
-  
+  */}
   </FloatingMenu>
 </div>
        <Picture />
        <Home />
        </div>
-    <div className='second br4 mt6-l'>
-  
+    <div className='second br4 mt2-l animated fadeInUpBig delay-5s'>
+  <Tilt className="Tilt ma4 " options={{ max : 50 }} style={{ height: 150, width: 150 }} >
+ <div className="Tilt-inner"><img className='br-100 h4 w4  shadow-5 tilt-bg' alt='profile' src={skills} /> 
+
+ </div>
+<p className='tc f3 nl3 i b'>Skills</p>
+</Tilt>
+
       <CardList Fields={Fields}/>
+
   <Footer />
       </div>
       </div>

@@ -2,17 +2,18 @@
   text-align: center;
 }
 body{
-	 background: linear-gradient(to right,#1D2B64,#F8CDDA);
+        background: linear-gradient(to right,#1D2B64,#F8CDDA);
 }
 
 .first{
-  background: linear-gradient(to right,#1D2B64,#F8CDDA);
+       background: linear-gradient(to right,#1D2B64,#F8CDDA);
 width: 100%;
 height: 35%;
 color: white;
 }
 .second{
     background: linear-gradient(to right,#d299c2,#fef9d7);
+
 width: 100%;
 height: 70%;
 }
@@ -36,5 +37,6 @@ background-size:  cover ;
 	background-image: url('about.png');
 background-size:  cover ;
 }
-
+.tilt-bg{
+background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);}
 

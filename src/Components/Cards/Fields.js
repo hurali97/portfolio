@@ -11,7 +11,7 @@ url:'https://assets.exercism.io/tracks/java-bordered-turquoise.png'
 },
 {
 id : 3,
-tag: 'Html,Css,JavaScript,React.js',
+tag: 'React.js',
 url:'https://xiaoyunyang.github.io/post/images/react.png'
 },
 

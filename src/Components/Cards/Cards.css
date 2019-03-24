@@ -6,7 +6,7 @@
 .bg-linear{
 
 	background-image: linear-gradient(to bottom, #5ee7df 0%, #b490ca 100%);
-}
+background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);}
 .bg-child{
 	background:linear-gradient(to top,#f5f7fa,#c3cfe2);
 }
