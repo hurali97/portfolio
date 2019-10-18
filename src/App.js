@@ -94,6 +94,9 @@ this.onButtonClick('xyz')
        <Home />
        </div>
     <div className='second br4 mt2-l animated fadeInUpBig delay-5s'>
+      <div style={{display:'flex', flexDirection:'row' , justifyContent: 'space-around', alignItems:'center'}}>
+
+     
   <Tilt className="Tilt ma4 " options={{ max : 50 }} style={{ height: 150, width: 150 }} >
  <div className="Tilt-inner"><img className='br-100 h4 w4  shadow-5 tilt-bg' alt='profile' src={skills} /> 
 
@@ -102,7 +105,7 @@ this.onButtonClick('xyz')
 </Tilt>
 
       <CardList Fields={Fields}/>
-
+      </div>
   <Footer />
       </div>
       </div>

@@ -6,7 +6,9 @@ const CardList=({Fields})=>{
 return(
 	<div >
 	
-	<article class="mh7-l br4 pa3 pa4-ns mv3 animated fadeInUpBig delay-5s b--black-10 nt6-ns bg-linear shadow-4">
+	<article class=" br4 pa3  mv3 animated fadeInUpBig delay-5s b--black-10  bg-linear shadow-4"
+	style={{height:200, marginRight: '10vw'}}
+	>
 
 	<div className='center '>
 {
